@@ -1,18 +1,19 @@
 <!-- Describe task in general -->
 
 <p>
-    {{ENUNCIADO}}
+    O algoritmo de insertion sort ordena uma lista inserindo cada elemento na posição correta dentro de uma sublista já ordenada. O objetivo deste exercício é fornecer uma visualização clara de cada etapa desse processo, mostrando o estado da lista após cada inserção, para ajudar a compreender melhor como funciona o insertion sort.</p>:<img  title="example" src="{{MEDIA}}insertionsort.png" alt="example" style="max-height: 300px"/><p> Na imagem acima, você encontra uma ilustração do algoritmo em funcionamento.
+
 </p>
 
 
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada </strong> {{ENTRADA}}
+    <strong>Entrada </strong> Uma lista de inteiros desordenada.
 </p>
 
 <p>
-    <strong>Saída: </strong> {{SAIDA}}
+    <strong>Saída: </strong> Uma lista de listas, onde cada sublista representa o estado da lista original após cada etapa de inserção realizada pelo algoritmo de insertion sort. A lista original antes de qualquer inserção não deve ser incluída como o primeiro elemento da lista de saída.
 </p>
 
 
@@ -28,7 +29,9 @@ countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
 <pre class="brush: python">
-    {{EXEMPLOS}}
+    insertion_sort_steps([3, 1, 2]) >> [[1, 3, 2], [1, 2, 3]]
+insertion_sort_steps([4, 3, 2, 1]) >> [[3, 4, 2, 1], [2, 3, 4, 1], [1, 2, 3, 4]]
+insertion_sort_steps([1, 2, 3]) == []
 </pre>
 {% endif %}
 </div>
